@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let tc = 20;
+        let tf = (9/5) * tc + 32;
+        alert( "20 градусов по Цельсию = " + tf + " градусов по Фаренгейту")
+
+        
+        let name = "Василий"
+        let admin = name
+
+        alert (name)
+
+
+        /*
+        первые 2 числа складываются, получается число 20. Затем конкатенируются со строкой "10", получаетс 2010
+        */
+
+        let result1 = 10 + 10 + "10";
+        console.log(result1);
+
+
+         /*
+        первое число 10 конкатенируется со строкой "10" - получается 1010.
+        строка "1010" конкотенируется с числом 10, получается 101010
+        */
+
+        let result2 = 10 + "10" + 10;
+        console.log(result2);
+
+
+         /*
+        первые 2 числа складываются, получается число 20. +"10" - тут унарный плюс сделал из сторки "10" число 10. 20+10=30
+        */
+
+        let result3 = 10 + 10 + +"10";
+        console.log(result3);
+
+
+        /*
+        Унарный минус сделал из пустой строки -0. Деление на -0 возвращает -infinity
+        */
+
+        let result4 = 10 / -"";
+        console.log(result4);
+
+        /*
+        Унарный плюс не может сделать из строки "2,5" число, т к поставлена запятая, следовательно значение +"2,5" - это NaN. Деление на NaN возвращает тоже NaN.
+        */
+        let result5 = 10 / +"2,5";
+        console.log(result5);
+
+    </script>
+
+    
+</body>
+
+</html>
