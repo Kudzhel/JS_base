@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function mathOperation(arg1, arg2, operation) {
+
+           switch (operation) {
+               case "addition":
+                   return arg1 + arg2; 
+
+                case "subtraction":
+                   return arg1 - arg2;
+
+                case "multiplication":
+                    return arg1 * arg2;
+
+                case "division":
+                    return arg1 / arg2;
+
+           }
+
+        }
+        let addResult = mathOperation(77, 33, "addition");
+        console.log(addResult);
+        
+        let subResult = mathOperation(77, 33, "subtraction");
+        console.log(subResult);
+
+        let mulResult = mathOperation(77, 33, "multiplication");
+        console.log(mulResult);
+
+        let divResult = mathOperation(77, 33, "division");
+        console.log(divResult);
+
+      
+    </script>
+</body>
+
+</html>

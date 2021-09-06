@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //сделаю с помощью 3-х известных мне на данный момент функций.
+
+        //function declaration - сложение a и b.
+
+        function addition(a, b) {
+           let result = a + b;
+           return console.log("результат сложения a и b = " + result);
+        }
+        addition(7, 10); 
+
+
+        //function expression - умножение a и b.
+
+        let multiplication = function (a, b) {
+            let result = a * b;
+            return console.log("результат умножения a и b = " + result);
+        }
+        multiplication (5, 20);
+
+
+        //стрелочная функция - деление a на b.
+
+        let division = (a, b) => {
+            let result = a / b;
+            return console.log("результат деления a и b = " + result);
+        }
+        division (76, 20);
+
+
+        //и снова function declaration - вычитание b из a.
+
+        subtraction(3, 22); 
+        function subtraction(a, b) {
+        let result = a - b;
+        return console.log("результат вычитания a и b = " + result);
+        }
+
+    </script>
+</body>
+</html>
